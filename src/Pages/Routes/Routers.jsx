@@ -6,6 +6,8 @@ import {
 import Home from "../Home/Home";
 import Login from "../Login/Login";
 import Register from "../Register/Register";
+import ManageUsers from "../ManageUsers/ManageUsers";
+import PrivateRoute from "./PrivateRoute";
 
 export const router = createBrowserRouter([
     {
@@ -23,6 +25,10 @@ export const router = createBrowserRouter([
             {
                 path: '/register',
                 element: <Register></Register>
+            },
+            {
+                path: '/manageUser',
+                element: <PrivateRoute><ManageUsers></ManageUsers></PrivateRoute>
             }
         ]
     },

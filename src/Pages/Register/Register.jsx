@@ -1,9 +1,9 @@
 import SocialLogin from '../../Components/SocialLogin';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
-import useAxiosPublic from '../../Hooks/axiosPublic';
 import { useForm } from 'react-hook-form';
 import useAuth from '../../Hooks/useAuth';
+import useAxiosPublic from '../../Hooks/axiosPublic';
 
 const Register = () => {
     const { createUser, updateUserProfile } = useAuth();
