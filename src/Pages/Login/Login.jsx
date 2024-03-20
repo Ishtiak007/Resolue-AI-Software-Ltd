@@ -40,7 +40,7 @@ const Login = () => {
 
     return (
         <div>
-            <div className="hero min-h-[80vh] bg-base-200">
+            <div className="hero min-h-[100vh] bg-base-200">
 
                 <div className="flex-col lg:flex-row-reverse">
                     <div className="card shrink-0 w-full shadow-2xl bg-base-100">

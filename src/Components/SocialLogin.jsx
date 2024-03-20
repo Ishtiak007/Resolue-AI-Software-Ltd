@@ -2,11 +2,12 @@ import { useNavigate } from "react-router-dom";
 import useAuth from "../Hooks/useAuth";
 
 import googleLogo from '../assets/googleLogo.png'
+import useAxiosPublic from "../Hooks/axiosPublic";
 
 
 const SocialLogin = () => {
     const { googleSignIn } = useAuth();
-    // const axiosPublic = useAxiosPublic();
+    const axiosPublic = useAxiosPublic();
     const navigate = useNavigate();
     const handleGoogleSignIn = () => {
         googleSignIn()
@@ -30,7 +31,6 @@ const SocialLogin = () => {
     return (
         <div className="space-y-3">
             <button onClick={handleGoogleSignIn} className="flex items-center gap-3 w-3/4 rounded-3xl p-2 outline outline-1 outline-slate-800 mx-auto"><img src={googleLogo} className="w-6" alt="" /> Continue With Google</button>
-            {/* <button onClick={handleGithubLogIn} className="flex items-center gap-3 w-3/4 rounded-3xl p-2 outline outline-1 outline-slate-800 mx-auto"><FaGithub></FaGithub>Continue With Github</button> */}
         </div>
     );
 };
