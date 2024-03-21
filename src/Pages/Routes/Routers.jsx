@@ -8,6 +8,7 @@ import Login from "../Login/Login";
 import Register from "../Register/Register";
 import ManageUsers from "../ManageUsers/ManageUsers";
 import PrivateRoute from "./PrivateRoute";
+import FAQ from "../FAQ/FAQ";
 
 export const router = createBrowserRouter([
     {
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
             {
                 path: '/manageUser',
                 element: <PrivateRoute><ManageUsers></ManageUsers></PrivateRoute>
+            },
+            {
+                path: '/faq',
+                element: <FAQ></FAQ>
             }
         ]
     },
